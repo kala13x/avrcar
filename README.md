@@ -2,5 +2,10 @@
 
 პროექტში გამოყენებული ნაწილები :
 
-Ultrasonic sensor
-AVR atmage 128
+1)  მექანიკური პლატფორმა ( I-RICER ) 
+    https://www.sparkfun.com/products/11162
+
+2)  ულტრაბგერითი სენსორი 
+    http://letsmakerobots.com/node/30209
+
+3)  AVR მიკროპროცესორი ATmage128
