@@ -1,0 +1,1 @@
+sudo avrprog2 -matmega128 --flash w:Test_avr.elf
