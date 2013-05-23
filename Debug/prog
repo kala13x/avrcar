@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo avrprog2 -matmega128 --flash w:Test_avr.elf
+sudo avrprog2 -matmega128 --flash w:avrcar.elf
