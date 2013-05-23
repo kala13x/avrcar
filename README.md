@@ -9,11 +9,11 @@
     http://letsmakerobots.com/node/30209
 aq vichoraot
 
-<<<<<<< HEAD
-3)  AVR მიკროპროცესორი ATmage48
-=======
-3)  AVR მიკროპროცესორი ATmega128 www.mikroe.com/bigavr
->>>>>>> 1b894d74aa70309e0d1b574a77d50df26a7d74e9
+
+3)  AVR მიკროპროცესორი ATmega48 (მექანიკური ნაწილის მართვა)
+
+4)  AVR მიკროპროცესორი ATmega128 www.mikroe.com/bigavr
+
 
 
 პროექტი მიზნათ ისახავს შეიქმანს მოძრავი ობიექტი, რომელიც უტრაბგერითი სენსორის მეშვეობით გაზომავს მანძინს,
