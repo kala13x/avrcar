@@ -7,6 +7,7 @@
 
 2)  ულტრაბგერითი სენსორი 
     http://letsmakerobots.com/node/30209
+aq vichoraot
 
 <<<<<<< HEAD
 3)  AVR მიკროპროცესორი ATmage48
