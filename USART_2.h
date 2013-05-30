@@ -5,7 +5,7 @@
 void USART2_Init();
 void USART2_Transmit();
 
-extern char USART2_buffer[128];
+extern char USART2_buffer[250];
 extern unsigned char USART2_Busy;
 
 

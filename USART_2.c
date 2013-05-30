@@ -9,9 +9,9 @@
 
 #define BAUDRATE2 9600									//set desired baud rate
 //#define UBRRVAL ((F_CPU/(BAUDRATE*16UL))-1)			//calculate UBRR value
-#define UBRRVAL2 ((8000000/(BAUDRATE2*16UL))-1)			//calculate UBRR value
+#define UBRRVAL2 ((7372800/(BAUDRATE2*16UL))-1)			//calculate UBRR value
 
-char USART2_buffer[128];
+char USART2_buffer[250];
 unsigned char USART2_Positone=0;
 unsigned char USART2_Busy=0;
 char USART2_Vel;
