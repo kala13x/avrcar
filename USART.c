@@ -36,7 +36,7 @@ void USART_Init()
 	UCSR0B=(0<<RXEN) |					//	Enable USART Receiver
 	      (1<<TXEN) |					//	Enable USART Transmitter
 		  (0<<RXCIE)|					//	Enable USART Interrupt on receive complete
-		  (1<<TXCIE);
+		  (0<<TXCIE);
 
 	//sei();
 }

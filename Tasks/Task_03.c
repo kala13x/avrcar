@@ -5,7 +5,7 @@
 
 unsigned char Task_03_Step		= 0;
 
-
+char SAVE;
 
 void Task_03(void)
 {
@@ -57,16 +57,32 @@ void Task_03(void)
 		case 4 :
 		{
 
-			UDR0 = USART2_Vel;
+			//UDR0 = USART2_Vel;
+			SAVE = USART2_Vel;
+			Task_04__Task_Start;
 			Task_03__Task_Stop;
+
+
+			//USART2_Waiting_For_Free ;
+			//sprintf(USART2_buffer,"yyyyyyyyyyy \n\r");
+			//USART2_Transmit();
+
 			break;
 		}
 
 		case 5 :
 		{
+			Task_03__Task_Stop;
+			break;
+		}
+
+
+		case 6 :
+		{
 
 			Task_03__Task_Stop;
 			break;
+
 		}
 
 

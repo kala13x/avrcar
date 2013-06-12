@@ -23,11 +23,11 @@ unsigned char Task_02_Step		= 0;
 		#define HCRS04_Trig_0				PORTD &= ~(1 << 4);		// Test
 
 
-		union
+		/*union
 		{   unsigned long _long;
 			unsigned short _short;
 			unsigned char  _char[4];
-		} MyVel;
+		} MyVel;*/
 
 
 		union
@@ -66,9 +66,11 @@ void Task_02(void)
 
 
 			if (USART2_Busy == 0) {
-				sprintf(USART2_buffer,"Distance is: %lu\n\r", MyVel._long);
+				sprintf(USART2_buffer,">  %lu\n\r", MyVel._long);
+				//mtvleli = MyVel._long;
 				USART2_Transmit();
 				Task_02__Task_Stop;
+				//Task_02__Task_Start;
 			}
 
 
