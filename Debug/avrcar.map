@@ -174,7 +174,7 @@ LOAD /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x19e4
+.text           0x00000000     0x1a06
  *(.vectors)
  .vectors       0x00000000       0x8c /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/crtm128.o
                 0x00000000                __vectors
@@ -282,123 +282,123 @@ LOAD /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a
                 0x000007e6                USART2_Transmit
                 0x00000830                __vector_32
                 0x000008b8                __vector_30
- .text          0x0000092c       0x3e ./main.o
+ .text          0x0000092c       0x60 ./main.o
                 0x0000092c                main
- .text          0x0000096a        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
- .text          0x0000096a        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_copy_data.o)
- .text          0x0000096a        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_clear_bss.o)
- .text          0x0000096a       0x5a /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_fixunssfsi.o)
-                0x0000096a                __fixunssfsi
- .text          0x000009c4      0x35c /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_addsub_sf.o)
-                0x00000c68                __addsf3
-                0x00000cc0                __subsf3
- .text          0x00000d20      0x1ca /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_mul_sf.o)
-                0x00000d20                __mulsf3
- .text          0x00000eea       0x5e /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_gt_sf.o)
-                0x00000eea                __gtsf2
- .text          0x00000f48       0x5e /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_ge_sf.o)
-                0x00000f48                __gesf2
- .text          0x00000fa6       0x5e /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_lt_sf.o)
-                0x00000fa6                __ltsf2
- .text          0x00001004       0x9e /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_sf_to_si.o)
-                0x00001004                __fixsfsi
- .text          0x000010a2        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_thenan_sf.o)
- .text          0x000010a2        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_prologue.o)
- .text          0x000010a2        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_epilogue.o)
- .text          0x000010a2      0x182 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_pack_sf.o)
-                0x000010a2                __pack_f
- .text          0x00001224       0xde /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_unpack_sf.o)
-                0x00001224                __unpack_f
- .text          0x00001302       0xc2 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_fpcmp_parts_sf.o)
-                0x00001302                __fpcmp_parts_f
- .text          0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(sprintf.o)
- .text          0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(vfprintf_std.o)
- .text          0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(strnlen_P.o)
- .text          0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(strnlen.o)
- .text          0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(fputc.o)
- .text          0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(ultoa_invert.o)
-                0x000013c4                . = ALIGN (0x2)
+ .text          0x0000098c        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
+ .text          0x0000098c        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_copy_data.o)
+ .text          0x0000098c        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_clear_bss.o)
+ .text          0x0000098c       0x5a /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_fixunssfsi.o)
+                0x0000098c                __fixunssfsi
+ .text          0x000009e6      0x35c /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_addsub_sf.o)
+                0x00000c8a                __addsf3
+                0x00000ce2                __subsf3
+ .text          0x00000d42      0x1ca /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_mul_sf.o)
+                0x00000d42                __mulsf3
+ .text          0x00000f0c       0x5e /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_gt_sf.o)
+                0x00000f0c                __gtsf2
+ .text          0x00000f6a       0x5e /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_ge_sf.o)
+                0x00000f6a                __gesf2
+ .text          0x00000fc8       0x5e /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_lt_sf.o)
+                0x00000fc8                __ltsf2
+ .text          0x00001026       0x9e /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_sf_to_si.o)
+                0x00001026                __fixsfsi
+ .text          0x000010c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_thenan_sf.o)
+ .text          0x000010c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_prologue.o)
+ .text          0x000010c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_epilogue.o)
+ .text          0x000010c4      0x182 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_pack_sf.o)
+                0x000010c4                __pack_f
+ .text          0x00001246       0xde /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_unpack_sf.o)
+                0x00001246                __unpack_f
+ .text          0x00001324       0xc2 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_fpcmp_parts_sf.o)
+                0x00001324                __fpcmp_parts_f
+ .text          0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(sprintf.o)
+ .text          0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(vfprintf_std.o)
+ .text          0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(strnlen_P.o)
+ .text          0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(strnlen.o)
+ .text          0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(fputc.o)
+ .text          0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(ultoa_invert.o)
+                0x000013e6                . = ALIGN (0x2)
  *(.text.*)
  .text.libgcc.mul
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
  .text.libgcc.div
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
- .text.libgcc   0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
+ .text.libgcc   0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_copy_data.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_copy_data.o)
  .text.libgcc.div
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_copy_data.o)
- .text.libgcc   0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_copy_data.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc   0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_copy_data.o)
  .text.libgcc.prologue
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_copy_data.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_copy_data.o)
  .text.libgcc.builtins
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_copy_data.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_copy_data.o)
  .text.libgcc.fmul
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_copy_data.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_copy_data.o)
  .text.libgcc.mul
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_clear_bss.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_clear_bss.o)
  .text.libgcc.div
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_clear_bss.o)
- .text.libgcc   0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_clear_bss.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_clear_bss.o)
  .text.libgcc.prologue
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_clear_bss.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_clear_bss.o)
  .text.libgcc.builtins
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_clear_bss.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_clear_bss.o)
  .text.libgcc.fmul
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_clear_bss.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_clear_bss.o)
  .text.libgcc.mul
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_prologue.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_prologue.o)
  .text.libgcc.div
-                0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_prologue.o)
- .text.libgcc   0x000013c4        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_prologue.o)
+                0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_prologue.o)
+ .text.libgcc   0x000013e6        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_prologue.o)
  .text.libgcc.prologue
-                0x000013c4       0x38 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_prologue.o)
-                0x000013c4                __prologue_saves__
+                0x000013e6       0x38 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_prologue.o)
+                0x000013e6                __prologue_saves__
  .text.libgcc.builtins
-                0x000013fc        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_prologue.o)
+                0x0000141e        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_prologue.o)
  .text.libgcc.fmul
-                0x000013fc        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_prologue.o)
+                0x0000141e        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_prologue.o)
  .text.libgcc.mul
-                0x000013fc        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_epilogue.o)
+                0x0000141e        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_epilogue.o)
  .text.libgcc.div
-                0x000013fc        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_epilogue.o)
- .text.libgcc   0x000013fc        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_epilogue.o)
+                0x0000141e        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_epilogue.o)
+ .text.libgcc   0x0000141e        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_epilogue.o)
  .text.libgcc.prologue
-                0x000013fc       0x36 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_epilogue.o)
-                0x000013fc                __epilogue_restores__
+                0x0000141e       0x36 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_epilogue.o)
+                0x0000141e                __epilogue_restores__
  .text.libgcc.builtins
-                0x00001432        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_epilogue.o)
+                0x00001454        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_epilogue.o)
  .text.libgcc.fmul
-                0x00001432        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_epilogue.o)
+                0x00001454        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_epilogue.o)
  .text.avr-libc
-                0x00001432       0x62 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(sprintf.o)
-                0x00001432                sprintf
+                0x00001454       0x62 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(sprintf.o)
+                0x00001454                sprintf
  .text.avr-libc
-                0x00001494      0x40c /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(vfprintf_std.o)
-                0x00001494                vfprintf
+                0x000014b6      0x40c /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(vfprintf_std.o)
+                0x000014b6                vfprintf
  .text.avr-libc
-                0x000018a0       0x16 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(strnlen_P.o)
-                0x000018a0                strnlen_P
+                0x000018c2       0x16 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(strnlen_P.o)
+                0x000018c2                strnlen_P
  .text.avr-libc
-                0x000018b6       0x16 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(strnlen.o)
-                0x000018b6                strnlen
+                0x000018d8       0x16 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(strnlen.o)
+                0x000018d8                strnlen
  .text.avr-libc
-                0x000018cc       0x58 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(fputc.o)
-                0x000018cc                fputc
+                0x000018ee       0x58 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(fputc.o)
+                0x000018ee                fputc
  .text.avr-libc
-                0x00001924       0xbc /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(ultoa_invert.o)
-                0x00001924                __ultoa_invert
-                0x000019e0                . = ALIGN (0x2)
+                0x00001946       0xbc /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(ultoa_invert.o)
+                0x00001946                __ultoa_invert
+                0x00001a02                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000019e0        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
-                0x000019e0                exit
-                0x000019e0                _exit
+ .fini9         0x00001a02        0x0 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
+                0x00001a02                exit
+                0x00001a02                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -417,11 +417,11 @@ LOAD /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000019e0        0x4 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
+ .fini0         0x00001a02        0x4 /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a(_exit.o)
  *(.fini0)
-                0x000019e4                _etext = .
+                0x00001a06                _etext = .
 
-.data           0x00800100       0x3a load address 0x000019e4
+.data           0x00800100       0x3a load address 0x00001a06
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x0 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/crtm128.o
@@ -530,8 +530,8 @@ LOAD /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a
                 0x008001d6                USART2_Vel
                 0x008001d7                USART2_buffer
                 0x008002d1                PROVIDE (__bss_end, .)
-                0x000019e4                __data_load_start = LOADADDR (.data)
-                0x00001a1e                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00001a06                __data_load_start = LOADADDR (.data)
+                0x00001a40                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x008002d1        0x0
                 0x008002d1                PROVIDE (__noinit_start, .)
@@ -556,7 +556,7 @@ LOAD /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x34ec
+.stab           0x00000000     0x3498
  *(.stab)
  .stab          0x00000000      0x6cc /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/crtm128.o
  .stab          0x000006cc      0x45c ./Tasks/Task_01.o
@@ -573,24 +573,24 @@ LOAD /usr/lib/gcc/avr/4.7.0/avr51/libgcc.a
                                 0x414 (size before relaxing)
  .stab          0x00001a70      0x2d0 ./USART_2.o
                                 0x4f8 (size before relaxing)
- .stab          0x00001d40      0x240 ./main.o
-                                0x468 (size before relaxing)
- .stab          0x00001f80      0x39c /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(sprintf.o)
+ .stab          0x00001d40      0x1ec ./main.o
+                                0x414 (size before relaxing)
+ .stab          0x00001f2c      0x39c /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(sprintf.o)
                                 0x3e4 (size before relaxing)
- .stab          0x0000231c      0xa44 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(vfprintf_std.o)
+ .stab          0x000022c8      0xa44 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(vfprintf_std.o)
                                 0xc24 (size before relaxing)
- .stab          0x00002d60       0x9c /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(strnlen_P.o)
+ .stab          0x00002d0c       0x9c /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(strnlen_P.o)
                                  0xa8 (size before relaxing)
- .stab          0x00002dfc       0x9c /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(strnlen.o)
+ .stab          0x00002da8       0x9c /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(strnlen.o)
                                  0xa8 (size before relaxing)
- .stab          0x00002e98      0x1d4 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(fputc.o)
+ .stab          0x00002e44      0x1d4 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(fputc.o)
                                 0x3b4 (size before relaxing)
- .stab          0x0000306c      0x480 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(ultoa_invert.o)
+ .stab          0x00003018      0x480 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/libc.a(ultoa_invert.o)
                                 0x48c (size before relaxing)
 
-.stabstr        0x00000000     0x1660
+.stabstr        0x00000000     0x1656
  *(.stabstr)
- .stabstr       0x00000000     0x1660 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/crtm128.o
+ .stabstr       0x00000000     0x1656 /usr/lib/gcc/avr/4.7.0/../../../avr/lib/avr51/crtm128.o
 
 .stab.excl
  *(.stab.excl)

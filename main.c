@@ -1,9 +1,30 @@
 
 #include "ROOT.h"
 #include <util/delay.h>
+#define DD_SERVO_Out			DDRB |=  (1 << 5);
 
 
 int main(void) {
+
+	DD_SERVO_Out;
+
+	OCR1AH = 0x05;
+	OCR1AL = 0xDC;
+	ICR1H = 0xFF;
+	ICR1L = 0xFF;
+	TCCR1C =0;
+	TCCR1A = 0x82;
+	TCCR1B = 0x1A;
+
+
+
+	while (1)
+	{
+
+
+
+
+	}
 
 	int xxx=0;
 
