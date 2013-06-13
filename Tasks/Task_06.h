@@ -4,6 +4,10 @@
 #define Task_06__Task_Start			Task_06_Step  = 1
 
 
+
+
+
+
 extern unsigned char Task_06_Step ;
 
 
