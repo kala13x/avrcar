@@ -58,7 +58,7 @@ void Task_02(void)
 			gamura();
 
 			Task_02__GoTo_Next_Step;
-
+			Task_02__Task_Stop;
 			break;
 		}
 		case 2 :
@@ -67,10 +67,9 @@ void Task_02(void)
 
 			if (USART2_Busy == 0) {
 				sprintf(USART2_buffer,">  %lu\n\r", MyVel._long);
-				//mtvleli = MyVel._long;
 				USART2_Transmit();
 				Task_02__Task_Stop;
-				//Task_02__Task_Start;
+
 			}
 
 

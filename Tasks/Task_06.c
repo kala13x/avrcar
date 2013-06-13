@@ -13,6 +13,9 @@ unsigned short Servo_Motor_Delay = 0;
 unsigned char  Servo_Motor_Dir   = 0;
 unsigned char Servo_Pos          = 0;
 unsigned long Gamura_Vel[2];
+unsigned char STL             =0;
+unsigned char STM =0;
+unsigned char STR =0;
 
 
 void Task_06(void)
@@ -100,7 +103,7 @@ void Task_06(void)
 			{
 				Servo_Motor_Delay++;
 
-				if(Servo_Motor_Delay == 25000)
+				if(Servo_Motor_Delay == 15000)
 				{
 
 					Task_06__GoTo_Next_Step	;
@@ -132,14 +135,55 @@ void Task_06(void)
 
 			case 5 :
 			{
-				USART2_Waiting_For_Free ;
-				sprintf(USART2_buffer,"%lu  %lu  %lu\n\r", Gamura_Vel[0], Gamura_Vel[1], Gamura_Vel[2]);
-				USART2_Transmit();
-				Task_06__Task_Start;
+				//USART2_Waiting_For_Free ;
+				//sprintf(USART2_buffer,"%lu  %lu  %lu\n\r", Gamura_Vel[0], Gamura_Vel[1], Gamura_Vel[2]);
+				//USART2_Transmit();
+				//Task_06__Task_Start;
+
+
+		    	 UDR0 = 0;
+
+				 USART2_Waiting_For_Free ;
+				 sprintf(USART2_buffer,"y");
+				 USART2_Transmit();
+				 USART2_Waiting_For_Free ;
+
+				 Task_06__GoTo_Next_Step;
+
+
+
 
 				break;
 			}
 
+			case 6 :
+			{
+				if(Gamura_Vel[0]<800){ STL=1;} else {STL =0;}
+				if(Gamura_Vel[1]<800){ STM=1;} else {STM =0;}
+				if(Gamura_Vel[2]<800){ STR=1;} else {STR =0;}
+
+				if(STL==0 && STM==0 && STR==0) { UDR0 = 0x17; }
+				if(STL==0 && STM==0 && STR==1) { UDR0 = 0x67; }
+				if(STL==0 && STM==1 && STR==0) { UDR0 = 0x67; }
+				if(STL==0 && STM==1 && STR==1) { UDR0 = 0x67; }
+				if(STL==1 && STM==0 && STR==0) { UDR0 = 0x57; }
+				if(STL==1 && STM==0 && STR==1) {  }
+				if(STL==1 && STM==1 && STR==0) { UDR0 = 0x57; }
+				if(STL==1 && STM==1 && STR==1) {  }
+
+
+
+				Task_06__Task_Start;
+
+
+				break;
+			}
+
+			case 7 :
+			{
+
+				break;
+			}
 
 
 
