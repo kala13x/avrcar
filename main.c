@@ -18,14 +18,6 @@ int main(void) {
 
 
 
-	while (1)
-	{
-
-
-
-
-	}
-
 	int xxx=0;
 
 	gamura_init();
@@ -37,13 +29,15 @@ int main(void) {
 	 //Task_02__Task_Start;
 	 Task_03__Task_Stop;
 	 Task_04__Task_Stop;
-	 Task_05__Task_Start;
+	 Task_05__Task_Stop;
+	 Task_06__Task_Start;
 	while (1) {
 
 		Task_02();
 		Task_01();
 		//Task_04();
 		Task_05();
+		Task_06();
 		//Task_03();
 	}
 }

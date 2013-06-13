@@ -10,6 +10,7 @@
 #include "Tasks/Task_03.h"
 #include "Tasks/Task_04.h"
 #include "Tasks/Task_05.h"
+#include "Tasks/Task_06.h"
 
 extern char USART0_Vel;
 extern char USART2_Vel;
