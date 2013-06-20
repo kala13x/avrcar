@@ -6,16 +6,16 @@
 #define Servo_R_45					OCR1A = 1800
 
 
-unsigned char Task_06_Step		= 0;
+unsigned char Task_06_Step		            = 0;
 unsigned short b=0;
-unsigned char Servo_Pos_Step     = 0;
-unsigned short Servo_Motor_Delay = 0;
-unsigned char  Servo_Motor_Dir   = 0;
-unsigned char Servo_Pos          = 0;
+unsigned char Servo_Pos_Step                = 0;
+unsigned short Servo_Motor_Delay 			= 0;
+unsigned char  Servo_Motor_Dir  			= 0;
+unsigned char Servo_Pos         			= 0;
 unsigned long Gamura_Vel[2];
-unsigned char STL             =0;
-unsigned char STM =0;
-unsigned char STR =0;
+unsigned char STL             				= 0;
+unsigned char STM 							= 0;
+unsigned char STR 							= 0;
 
 
 void Task_06(void)
@@ -103,7 +103,7 @@ void Task_06(void)
 			{
 				Servo_Motor_Delay++;
 
-				if(Servo_Motor_Delay == 15000)
+				if(Servo_Motor_Delay == 8000)
 				{
 
 					Task_06__GoTo_Next_Step	;
@@ -167,9 +167,9 @@ void Task_06(void)
 				if(STL==0 && STM==1 && STR==0) { UDR0 = 0x67; }
 				if(STL==0 && STM==1 && STR==1) { UDR0 = 0x67; }
 				if(STL==1 && STM==0 && STR==0) { UDR0 = 0x57; }
-				if(STL==1 && STM==0 && STR==1) {  }
+				if(STL==1 && STM==0 && STR==1) { UDR0 = 0x77; }
 				if(STL==1 && STM==1 && STR==0) { UDR0 = 0x57; }
-				if(STL==1 && STM==1 && STR==1) {  }
+				if(STL==1 && STM==1 && STR==1) { UDR0 = 0x77; }
 
 
 
