@@ -158,9 +158,9 @@ void Task_06(void)
 
 			case 6 :
 			{
-				if(Gamura_Vel[0]<800){ STL=1;} else {STL =0;}
-				if(Gamura_Vel[1]<800){ STM=1;} else {STM =0;}
-				if(Gamura_Vel[2]<800){ STR=1;} else {STR =0;}
+				if(Gamura_Vel[0]<800){ STL=1;if(Gamura_Vel[0]<300){STL=2;}} else {STL =0;}
+				if(Gamura_Vel[1]<800){ STM=1;if(Gamura_Vel[1]<300){STM=2;}} else {STM =0;}
+				if(Gamura_Vel[2]<800){ STR=1;if(Gamura_Vel[1]<300){STM=2;}} else {STR =0;}
 
 				if(STL==0 && STM==0 && STR==0) { UDR0 = 0x17; }
 				if(STL==0 && STM==0 && STR==1) { UDR0 = 0x67; }
@@ -170,7 +170,34 @@ void Task_06(void)
 				if(STL==1 && STM==0 && STR==1) { UDR0 = 0x77; }
 				if(STL==1 && STM==1 && STR==0) { UDR0 = 0x57; }
 				if(STL==1 && STM==1 && STR==1) { UDR0 = 0x77; }
+/////////////////////////////////////////////////////////////////////////////
 
+				if(STL==0 && STM==0 && STR==2) { UDR0 = 0x67; }
+				if(STL==0 && STM==2 && STR==0) { UDR0 = 0x67; }
+				if(STL==0 && STM==2 && STR==2) { UDR0 = 0x87; }
+
+				if(STL==0 && STM==1 && STR==2) { UDR0 = 0x87; }
+				if(STL==0 && STM==2 && STR==1) { UDR0 = 0x87; }
+
+				if(STL==2 && STM==0 && STR==0) { UDR0 = 0x57; }
+				if(STL==2 && STM==0 && STR==2) { UDR0 = 0x77; }
+
+				if(STL==1 && STM==0 && STR==2) { UDR0 = 0x87; }
+				if(STL==2 && STM==0 && STR==1) { UDR0 = 0x77; }
+
+				if(STL==2 && STM==2 && STR==0) { UDR0 = 0x77; }
+
+				if(STL==1 && STM==2 && STR==0) { UDR0 = 0x77; }
+				if(STL==2 && STM==1 && STR==0) { UDR0 = 0x77; }
+
+				if(STL==2 && STM==2 && STR==2) { UDR0 = 0x77; }
+
+				if(STL==1 && STM==2 && STR==2) { UDR0 = 0x87; }
+				if(STL==2 && STM==1 && STR==2) { UDR0 = 0x77; }
+				if(STL==2 && STM==2 && STR==1) { UDR0 = 0x77; }
+				if(STL==1 && STM==1 && STR==2) { UDR0 = 0x87; }
+				if(STL==2 && STM==1 && STR==1) { UDR0 = 0x77; }
+				if(STL==1 && STM==2 && STR==1) { UDR0 = 0x77; }
 
 
 				Task_06__Task_Start;

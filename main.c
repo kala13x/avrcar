@@ -10,9 +10,9 @@ int main(void) {
 
 	OCR1AH = 0x05;
 	OCR1AL = 0xDC;
-	ICR1H = 0xFF;
-	ICR1L = 0xFF;
-	TCCR1C =0;
+	ICR1H  = 0xFF;
+	ICR1L  = 0xFF;
+	TCCR1C =    0;
 	TCCR1A = 0x82;
 	TCCR1B = 0x1A;
 
