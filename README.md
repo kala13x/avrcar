@@ -7,8 +7,6 @@
 
 2)  ულტრაბგერითი სენსორი 
     http://letsmakerobots.com/node/30209
-aq vichoraot
-
 
 3)  AVR მიკროპროცესორი ATmega48 (მექანიკური ნაწილის მართვა)
 
