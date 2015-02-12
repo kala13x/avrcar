@@ -16,8 +16,6 @@ int main(void) {
 	TCCR1A = 0x82;
 	TCCR1B = 0x1A;
 
-
-
 	int xxx=0;
 
 	gamura_init();
@@ -32,7 +30,7 @@ int main(void) {
 	 Task_05__Task_Stop;
 	 Task_06__Task_Start;
 	while (1) {
-
+		
 		Task_02();
 		Task_01();
 		//Task_04();
